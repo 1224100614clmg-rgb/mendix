@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <!--Aquí se coloca información sobre la página-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Página sobre Mendix</title>
+    <!--Se integra la hoja de estilo css-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body> <!--Aqui va el contenido visible de la página-->
+     <!--Encabezado--> 
+    <header>
+      <div id="logo"> <!-- div: se usa para agrupar contenido en bloques-->
+      <img id="mendixIm" src="img/img.png" alt="No se puede mostrar la imagen">
+      </div>
+    
+      <!--Menú -->
+   
+<nav>  <!--Indica que lo que esta adentro del codigo es el menú-->
+   <ul> 
+    <!--Se utiliza el simbolo de # para hacer vinculos de un id en el mismo documento-->
+
+   <a href="#" onclick="mostrarSeccion('mendix')"> 🏠¿Qué es Mendix?</a>
+   <a href="#" onclick="mostrarSeccion('ventajas')">📝Ventajas de trabajar con Mendix</a>
+   <a href="#" onclick="mostrarSeccion('casos')">💡Casos de uso Mendix</a>
+   <a href="#" onclick="mostrarSeccion('recursos')">📚Recursos de aprendizaje de Mendix</a>
+   <a href="#" onclick="mostrarSeccion('desarrollador')">👩🏻‍💻 Datos del desarrollador</a>
+
+   </ul>  
+</nav>
+
+</header>
+
+  <main>
+   <!--Secciones-->
+   <section id="mendix" class="active">
+   <hr>  <!-- Separador con linea horizontal-->
+    <h1 id="mendix">Mendix</h1>
+    <p>
+        Mendix es una plataforma de desarrollo low-code (código bajo) habilitada para IA 
+        que permite a empresas crear, desplegar y mantener aplicaciones empresariales web 
+        y móviles de forma más rápida y eficiente utilizando herramientas visuales y componentes 
+        preconstruidos, en lugar de escribir código tradicional. Esta plataforma, ahora parte de 
+        Siemens Digital Industries Software, acelera la transformación digital de las empresas al 
+        facilitar la colaboración entre desarrolladores y expertos de negocio para entregar 
+        aplicaciones personalizadas que se integran con sistemas existentes. 
+    </p>
+
+     <div class="video-container">
+    <iframe 
+        src="https://www.youtube.com/embed/t5X-H_QjX60" 
+        title="Mendix Tutorial" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+</div>
+     
+
+
+
+     <div class="btn-container">
+    <a href="https://www.mendix.com/" class="btn" target="_blank">🌐 Visitar Mendix</a>
+    </div>
+
+    <h4>Low-code</h4>
+    <p>
+      El desarrollo low-code (bajo código) es un método para crear aplicaciones que requiere una 
+      codificación mínima gracias al uso de herramientas visuales intuitivas, como el arrastrar y 
+      soltar, y funcionalidades ya incorporadas. Permite un desarrollo de software más rápido y 
+      accesible, ya que reduce la necesidad de escribir código tradicional y facilita la colaboración 
+      entre desarrolladores profesionales y usuarios con menos experiencia técnica.   
+    </p>
+    </section>
+    
+    <section id="ventajas">
+    <hr>
+    <h1 id="ventajas">Ventajas de trabajar con Mendix </h1>
+    <p>
+    Mendix ofrece varias ventajas para el desarrollo de aplicaciones. 
+    🏎️ Permite crear aplicaciones mucho más rápido que el desarrollo tradicional gracias a su enfoque visual de arrastrar y soltar componentes preconstruidos. 
+    🤝 Además, facilita la colaboración efectiva entre desarrolladores y expertos de negocio, trabajando juntos en tiempo real y reduciendo errores en el desarrollo.
+     📱💻 Las aplicaciones creadas con Mendix son multiplataforma, funcionando en web, móvil y tablet sin necesidad de reescribir código para cada plataforma. 
+     🤖 La plataforma está habilitada para Inteligencia Artificial, integrando herramientas que automatizan procesos y mejoran la eficiencia. 
+     🔧 El mantenimiento de las aplicaciones es simplificado, ya que actualizar o modificar componentes reutilizables resulta mucho más fácil. 
+     📈 También ofrece escalabilidad, permitiendo que las aplicaciones crezcan junto con la empresa sin problemas de rendimiento. 
+     🔗 Finalmente, Mendix facilita la integración con otros sistemas, como bases de datos, ERP o servicios en la nube, 
+     haciendo todo el proceso más fluido y eficiente.
+    </p>
+    <hr>
+    </section>
+
+     
+    <section id="casos">
+            <h1>💼 Casos de uso de Mendix</h1>
+            <p>Empresas líderes que utilizan Mendix para sus aplicaciones:</p>
+            
+            <div class="casos-grid">
+                <div class="caso-card">
+                    <h3>🏭 Siemens</h3>
+                    <a href="https://www.siemens.com/global/en.html" target="_blank" class="btn">Ver más</a>
+                </div>
+                <div class="caso-card">
+                    <h3>⚡ Enexis</h3>
+                    <a href="https://www.enexisgroep.com/" target="_blank" class="btn">Ver más</a>
+                </div>
+                <div class="caso-card">
+                    <h3>📊 PWC</h3>
+                    <a href="https://www.pwc.com/gx/en.html" target="_blank" class="btn">Ver más</a>
+                </div>
+                <div class="caso-card">
+                    <h3>💼 CareerValue</h3>
+                    <a href="https://www.careervalue.nl/" target="_blank" class="btn">Ver más</a>
+                </div>
+                <div class="caso-card">
+                    <h3>🐦 Jobbird</h3>
+                    <a href="https://www.jobbird.com/nl" target="_blank" class="btn">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+    
+       
+<section id="recursos">
+    <hr>
+    <h1 id="Recursos">Recursos de aprendizaje de Mendix</h1>
+    <p>
+        Existen un conjunto de recursos muy amplios para trabajar con Mendix, pero
+        uno de los recursos oficiales será: <strong>Mendix Academy</strong>
+    </p>
+
+    <div class="recursos-principales">
+        <a href="https://academy.mendix.com/link/home" target="_blank" rel="noopener noreferrer" class="btn-recurso">
+            📚 Mendix Academy
+        </a>
+        <a href="https://www.mendix.com/" target="_blank" rel="noopener noreferrer" class="btn-recurso">
+            🌐 Sitio Oficial Mendix
+        </a>
+    </div>
+
+    <p><strong>Otros recursos de aprendizaje:</strong></p>
+    <ul class="lista-recursos">
+        <li>
+            <a href="https://youtu.be/t5X-H_QjX60?si=xj1aliwi11ZMDwch" target="_blank" rel="noopener noreferrer">
+                📺 Video tutorial de Mendix
+            </a>
+        </li>
+        <li>
+            <a href="https://www.mendix.com/partners/resources/" target="_blank" rel="noopener noreferrer">
+                📋 Recursos para partners
+            </a>
+        </li>
+        <li>
+            <a href="https://docs.mendix.com/" target="_blank" rel="noopener noreferrer">
+                📖 Documentación oficial
+            </a>
+        </li>
+    </ul>
+</section>
+
+     <!--Tarea-->
+
+      <section id="desarrollador">
+        <hr>
+      <h1 id="desarrolladorD"> Datos del desarrollador</h1>
+         <img src="img/userM.jpg" alt="No se puede mostrar la imagen" id="foto-desarrollador">
+        <!--lista de datos personales-->
+        
+        <ul id="datosD">  <!--Contenedor para agrupar varios elementos-->
+          <!--"li" es un item-->
+          <li><strong>Nombre: </strong>Claudia Lizbeth Méndez Galván</li>
+          <li><strong>Rol: </strong>Estudiante de Ingeniería en Desarrollo de Software Multiplataforma</li>
+          <li><strong>Contacto: </strong>4281313997</li>
+          <li><strong>Correo: </strong>lizm3ndz@gmail.com</li>
+      
+        </ul>
+  </main>
+
+
+  <script>
+        function mostrarSeccion(id){
+
+            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+
+            document.getElementById(id).classList.add("active");
+
+        }
+    </script>
+
+     
+
+</body>
+</html>
