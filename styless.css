@@ -1,0 +1,176 @@
+/*Parte principal de documento, dentro de él va todo lo que se muestra en la página */
+body{    
+    margin: 0;    /* controla el espacio externo de TODA la página */
+    font-family: Arial, Helvetica, sans-serif;  
+    background:  linear-gradient(to right, #F0F8FF, #64B5F6);
+    background-attachment: fixed; /* El fondo se queda fijo cuando haces scroll*/
+    
+}
+
+
+
+/* Estilo del menú */
+/*Nav: Toda la barra de navegación*/
+nav{
+    background-color: #333333;
+    padding: 10px;   /*Aumentar el espaciado interno del elemento*/
+    text-align: center;
+    position: sticky;
+}
+
+header {
+    background: white;
+    text-align: center;
+}
+
+#mendixIm{
+    width: 900px;
+}
+
+
+p {
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #0f0f0f; /* MEJORA: Color más legible */
+  }
+
+
+  .btn {
+            background: linear-gradient(45deg, #2196F3, #64B5F6);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+
+   .btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.video-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* ESTO LO CENTRA */
+    position: relative;
+    padding-bottom: 20.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ .lista-recursos a {
+    color: #1976D2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*Selecciona TODOS los enlaces (a) que están DENTRO del nav*/
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;   /*Se mueve el elemento de su lugar*/
+    font-weight: bold;
+   
+}
+
+
+nav a:hover{
+    color: #ffcc00;
+}
+
+
+main {
+ padding: 40px 20px;
+}
+
+
+/* Contenido  de cada sección */
+section{
+    display: none;
+    padding: 20 px;
+    text-align: justify;
+  
+  
+}
+
+section.active{
+    display: block;
+}
+
+h1{
+    color: #333;
+    border-bottom: 3px solid #14127e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h4{
+    color: #090909; 
+    background: #e3f2fd; 
+    padding: 10px 15px;
+    border-left: 4px solid #2196F3;
+    border-radius: 5px;
+}
+
+img{
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#datosD{
+  list-style-type: none;
+    list-style-type: none;
+ 
+}
+
+#foto-desarrollador{
+    display: block;    /* La convierte en bloque para que respete el margin auto */
+    margin: 0 auto;    /* Centra horizontalmente */
+    width: 400px;
+    height: 250px;
+    border-radius: 50%; /* circular */
+    border: 5px solid white; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+#desarrolladorD{
+  text-align: center; /* Centra el texto dentro de su contenedor */
+  color: darkblue;    /* (Opcional) cambia el color */
+  font-size: 32px;    /* (Opcional) tamaño de letra */
+
+}
+
+
+
+.casos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .caso-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
