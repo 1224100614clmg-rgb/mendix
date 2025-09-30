@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Módulo 1, 2 y 3 - Become a Rapid Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .module-content {
+        display: none;
+      }
+      .module-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mendix Academy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Módulos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo1')">1. Introducción</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo2')">2. Colabora con tu equipo</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo3')">3. Comience a crear su aplicación</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo4')">4. Agrega datos a tu aplicación</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo5')">5. Datos asociados</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo6')">6. Agregue lógica personalizada a su aplicación</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo7')">7. Automatización de procesos dentro de una aplicación</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo8')">8. Garantizar que sus datos sean válidos y coherentes</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo9')">9. Proteger su aplicación</a></li>
+                <li><a class="dropdown-item" href="#" onclick="showModule('modulo10')">10. Conclusión</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+      <!-- MÓDULO 1 -->
+      <div id="modulo1" class="module-content active">
+        <h1 class="text-center mb-4">Módulo 1: Introducción</h1>
+        <p class="text-center mb-5">En este módulo aprenderás más sobre Mendix y dónde podrás encontrar toda la información</p>
+        
+        <!-- 1.1 Bienvenida -->
+        <div class="mb-4">
+          <h3>1.1 Bienvenido</h3>
+          <p>¡Nos alegra que estés aquí! Esta ruta de aprendizaje está diseñada para cualquier persona que quiera aprender a crear aplicaciones utilizando la plataforma <strong>Mendix</strong>, sin importar si tienes conocimientos técnicos previos. A lo largo de esta ruta, aprenderás a manejar la plataforma de manera práctica y podrás desarrollar tus propias aplicaciones de manera rápida y efectiva.</p>
+          
+          <h4>Al finalizar esta ruta, serás capaz de:</h4>
+          <ul>
+            <li>Comprender los distintos componentes de Mendix y su función dentro de una aplicación.</li>
+            <li>Configurar tu perfil en la Comunidad Mendix y colaborar de manera efectiva con tu equipo.</li>
+            <li>Reconocer y utilizar los elementos de la interfaz de usuario de Mendix Studio Pro.</li>
+            <li>Crear páginas y estructurar los datos dentro del modelo de dominio de tu aplicación.</li>
+            <li>Establecer asociaciones entre diferentes tipos de datos para formar relaciones dentro de la app.</li>
+            <li>Crear lógica personalizada con Microflows y automatizar procesos dentro de tu aplicación.</li>
+            <li>Asegurar que tu aplicación contenga datos válidos y consistentes, y proteger la información de tu proyecto.</li>
+          </ul>
+        </div>
+
+        <!-- 1.2 La interfaz de la Academia -->
+        <div class="mb-4">
+          <h3>1.2 La interfaz de la Academia</h3>
+          <ul>
+            <li>Teoría con casos prácticos y ejemplos cotidianos.</li>
+            <li>Práctica con tutoriales y tareas paso a paso.</li>
+            <li>Pruebas de conocimiento repetibles sin afectar la certificación.</li>
+            <li>Comentarios y soporte disponibles dentro de la Academia y la Comunidad Mendix.</li>
+          </ul>
+        </div>
+
+        <!-- 1.3 Ecosistema de Mendix -->
+        <div class="mb-4">
+          <h3>1.3 Ecosistema de Mendix</h3>
+          <ul>
+            <li><strong>Portal de Mendix:</strong> gestionar proyectos, vincular con Jira.</li>
+            <li><strong>Marketplace:</strong> descargar Studio Pro, widgets, módulos y compartir contenido.</li>
+            <li><strong>Atlas UI:</strong> bloques y widgets para diseño.</li>
+            <li><strong>Studio Pro:</strong> editor WYSIWYG para páginas, lógica, seguridad e integraciones; admite Java y JavaScript.</li>
+            <li><strong>Catálogo:</strong> usar datos de otras apps.</li>
+            <li><strong>Soporte y Comunidad:</strong> ayuda, preguntas y acumulación de insignias.</li>
+            <li><strong>Documentación:</strong> tutoriales y guía de referencia accesible con F1 en Studio Pro.</li>
+          </ul>
+          <img src="img/image.png" alt="No disponible">
+
+          </div>
+          
+          <!-- 1.3.1 Descargar Mendix Studio Pro -->
+          <div class="ms-4 mb-3">
+            <h4>1.3.1 Descargar Mendix Studio Pro</h4>
+            <a href="https://marketplace.mendix.com/" target="_blank" class="btn btn-primary">Descargar Studio Pro</a>
+          </div>
+          
+          <!-- 1.3.2 Configurar su perfil de comunidad -->
+          <div class="ms-4 mb-3">
+            <h4>1.3.2 Configurar su perfil de comunidad</h4>
+            <p>Crear tu perfil para mostrar tu nivel y habilidades dentro de la Comunidad Mendix. La insignia se vuelve verde al aprobar la certificación y puede hacerse pública para demostrar tus competencias como Desarrollador Rápido.</p>
+          </div>
+        </div>
+
+        <!-- 1.4 Resumen -->
+        <div class="mb-4">
+          <h3>1.4 Resumen</h3>
+          <p>En este módulo has aprendido sobre el ecosistema de Mendix, la interfaz de la Academia y cómo configurar tu perfil de comunidad para comenzar tu ruta de aprendizaje como Desarrollador Rápido.</p>
+        </div>
+
+        <!-- 1.5 Comprobación de conocimientos -->
+        <div class="mb-4">
+          <h3>1.5 Comprobación de conocimientos</h3>
+          
+          <!-- Pregunta 1 -->
+          <div class="mb-4">
+            <h5>Pregunta 1: ¿Qué es Mendix Studio Pro?</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion1" value="opcion1">
+              <label class="form-check-label" for="p1opcion1">
+                Una herramienta para analizar big data utilizando algoritmos avanzados de Business Intelligence.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion2" value="opcion2">
+              <label class="form-check-label" for="p1opcion2">
+                Una herramienta de CRM que ofrece capacidades de CRM listas para usar.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion3" value="opcion3">
+              <label class="form-check-label" for="p1opcion3">
+                Una herramienta para crear, desarrollar e implementar aplicaciones innovadoras a la velocidad de la luz.
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion4" value="opcion4">
+              <label class="form-check-label" for="p1opcion4">
+                Una herramienta con la que puedes codificar tu aplicación web utilizando HTML.
+              </label>
+            </div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="mb-4">
+            <h5>Pregunta 2: Quieres compartir algo en Marketplace. Quieres que solo lo vean los miembros de tu empresa. ¿Es posible?</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion1" value="si">
+              <label class="form-check-label" for="p2opcion1">
+                Sí
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion2" value="no">
+              <label class="form-check-label" for="p2opcion2">
+                No
+              </label>
+            </div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="mb-4">
+            <h5>Pregunta 3: ¿Dónde puedes hacer preguntas a tus colegas y enviar ideas para nuevas funciones para Mendix?</h5>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion1" value="mercado">
+              <label class="form-check-label" for="p3opcion1">
+                Mercado
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion2" value="comunidad">
+              <label class="form-check-label" for="p3opcion2">
+                Comunidad
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion3" value="apoyo">
+              <label class="form-check-label" for="p3opcion3">
+                Apoyo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion4" value="academia">
+              <label class="form-check-label" for="p3opcion4">
+                Academia
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MÓDULO 2 -->
+      <div id="modulo2" class="module-content">
+        <h1 class="text-center mb-4">Módulo 2: Colabora con tu equipo</h1>
+        <p class="text-center mb-5">En este módulo aprenderás a gestionar proyectos y colaborar efectivamente con tu equipo</p>
+
+        <!-- Objetivos de aprendizaje -->
+        <div class="mb-4">
+          <h3>Objetivos de aprendizaje</h3>
+          <p>Al finalizar este módulo, usted podrá:</p>
+          <ul>
+            <li>Describir la gestión del ciclo de vida de las aplicaciones</li>
+            <li>Crear una nueva aplicación</li>
+            <li>Describe la metodología de proyectos Agile y sus beneficios.</li>
+            <li>Define los diferentes roles involucrados en un equipo Scrum</li>
+            <li>Identifique a su equipo de proyecto Mendix e invite a los miembros del equipo a su aplicación</li>
+            <li>Explicar el papel y la importancia de las historias de usuario.</li>
+            <li>Crea un wireframe para tu aplicación</li>
+            <li>Crear y administrar historias de usuario en Epics</li>
+            <li>Iniciar un nuevo sprint</li>
+
+          </ul>
+        </div>
+
+        <!-- 2.1 Gestión del ciclo de vida de las aplicaciones -->
+        <div class="mb-4">
+          <h3>2.1 Gestión del ciclo de vida de las aplicaciones</h3>
+          <p>
+Captura
+El ciclo de vida de la aplicación comienza aquí. 
+Mendix facilita el proceso de ideación ofreciendo diversas funciones de colaboración. 
+Por ejemplo, puedes usar Buzz para generar ideas con tus compañeros de equipo, hacer 
+preguntas, crear una encuesta y tomar decisiones.
+
+Desarrollar
+Luego, el equipo accede a Studio Pro. Mendix ofrece un sistema donde todos los miembros 
+del equipo pueden colaborar entre sí. Sincroniza y controla el proceso de desarrollo de
+la aplicación mediante el Portal de Mendix y Team Server. Con el control de versiones, 
+puedes integrar el trabajo de varios desarrolladores en una sola versión.
+
+Desplegar
+Cuando la aplicación está lista para probarse o lanzarse, Mendix se encarga de la fase de
+implementación con un solo clic. Los usuarios pueden acceder directamente desde su móvil,
+portátil u otros dispositivos.
+
+Iterar/Retroalimentación
+Una vez que acceden a ella, los usuarios pueden proporcionar comentarios directamente desde
+la aplicación. Los desarrolladores pueden ver y gestionar los comentarios en el Portal de 
+Mendix. ¡Esto da inicio a una segunda fase de captura! El ciclo se repite según sea
+necesario hasta que la aplicación esté completa, lo que se denomina iteración .
+
+Mendix apoya a ALM porque desarrollar aplicaciones transformadoras a gran velocidad requiere
+experimentación rápida, iteraciones frecuentes y una estrecha colaboración entre la empresa
+y el departamento de TI. Mientras que muchas herramientas de desarrollo de aplicaciones se
+centran en la implementación, Mendix apoya cada etapa del ciclo. Reúne a equipos pequeños 
+e interdisciplinarios y crea un lenguaje común entre la empresa y el departamento de TI.
+          </p>
+        </div>
+
+        <!-- 2.2 Nuestro caso de uso: LearnNow -->
+        <div class="mb-4">
+          <h3>2.2 Nuestro caso de uso: LearnNow</h3>
+          <p>Para este curso, trabajaremos con <strong>LearnNow</strong>, una plataforma de aprendizaje en línea que permite a los usuarios acceder a cursos, realizar seguimiento de su progreso y obtener certificaciones. A lo largo de los módulos, construiremos esta aplicación paso a paso.</p>
+          
+          <!-- 2.2.1 Crear una nueva aplicación -->
+          <div class="ms-4 mb-3">
+            <h4>2.2.1 Crear una nueva aplicación</h4>
+            <p>Para crear una nueva aplicación en Mendix:</p>
+            <ol>
+              <li>Inicia sesión en el Portal de Mendix.</li>
+              <li>Descargue, instale y ejecute Studio Pro 10.0.0 .</li>
+              <li>Haga clic en Crear nueva aplicación y seleccione el punto de inicio 
+                Aplicación web en blanco.</li>
+              <li>Haga clic en Usar este punto de partida y proporcione el nombre de la aplicación, 
+                una descripción y un ícono descriptivo.</li>
+              <li>¡Haga clic en Crear aplicación y espere a que Mendix haga 
+                su magia preparando su aplicación!</li>
+              <li>Una vez que la aplicación esté abierta en Studio Pro, visualice su 
+                aplicación en el Portal de Mendix haciendo clic en el botón Panel de
+                 proyecto en la parte superior derecha de Studio Pro 
+                 (junto al ícono del carrito de compras).</li>
+                 <li>Haz clic en el nombre de tu aplicación en el portal para ver 
+                  el Buzz de la aplicación . Es como una cronología del desarrollo 
+                  de la aplicación LearnNow Training Management. Ten en cuenta que es
+                   diferente del Buzz de la empresa en la parte superior de la pantalla. 
+                   Si tienes compañeros que también trabajan con Mendix, puedes comunicarte 
+                   con ellos en el Buzz de la empresa y ver qué aplicaciones han creado.</li>
+            </ol>
+          </div>
+
+          <!-- 2.2.2 Explorar la descripción general -->
+          <div class="ms-4 mb-3">
+            <h4>2.2.2 Explorar la descripción general</h4>
+            <p>Explora el Buzz
+            Una vez creada tu aplicación, verás el Buzz del Proyecto. 
+            Es como una cronología del desarrollo de la aplicación de gestión de formación LearnNow.
+            Es diferente del Buzz de la empresa. Si tienes compañeros que también trabajan con Mendix,
+            puedes comunicarte con ellos en el Buzz de la empresa y ver qué aplicaciones han creado.</p>
+            <ul>
+              <li>Panel de control del proyecto</li>
+              <li>Información de los miembros del equipo</li>
+              <li>Historias de usuario y tareas</li>
+              <li>Entornos de despliegue</li>
+              <li>Estadísticas y métricas del proyecto</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2.3 Metodología del proyecto -->
+        <div class="mb-4">
+          <h3>2.3 Metodología del proyecto</h3>
+          <p>
+            El desarrollo de aplicaciones transformadoras requiere experimentación rápida, 
+            iteración frecuente y una estrecha colaboración entre la empresa y el departamento 
+            de TI. La solución moderna a estos problemas se denomina desarrollo ágil. 
+            Con Agile, la productividad y los resultados del proyecto mejoran al priorizar
+             la velocidad y, por supuesto, la agilidad.
+          </p>
+
+          <img src="img/agile.png" alt="No disponible">
+        </div>
+
+        <!-- 2.4 Roles de la aplicación -->
+        <div class="mb-4">
+          <h3>2.4 Roles de la aplicación</h3>
+          <p>En un proyecto de Mendix, es común tener los siguientes roles:</p>
+          <ul>
+            <li><strong>Product Owner:</strong> Define la visión y prioridades del producto.</li>
+            <li><strong>Scrum Master:</strong> Facilita el proceso ágil y elimina impedimentos.</li>
+            <li><strong>Desarrollador:</strong> Construye la aplicación utilizando Mendix Studio Pro.</li>
+            <li><strong>Tester:</strong> Verifica la calidad y funcionalidad de la aplicación.</li>
+            <li><strong>Usuario Final:</strong> Utiliza la aplicación y proporciona retroalimentación.</li>
+          </ul>
+        </div>
+
+        <!-- 2.5 Construir un equipo en Mendix -->
+        <div class="mb-4">
+          <h3>2.5 Construir un equipo en Mendix</h3>
+          <p>Colaborar efectivamente requiere un equipo bien organizado. En el Portal de Mendix puedes gestionar los miembros de tu equipo, asignar roles y establecer permisos.</p>
+          
+          <!-- 2.5.1 Invitar miembros a su aplicación -->
+          <div class="ms-4 mb-3">
+            <h4>2.5.1 Invitar miembros a su aplicación</h4>
+            <p>Para invitar miembros:</p>
+            <ol>
+              <li>Ve a la sección "Team" en el Portal de Mendix.</li>
+              <li>Haz clic en "Invite Member".</li>
+              <li>Ingresa la dirección de correo electrónico del miembro.</li>
+              <li>Asigna un rol (Desarrollador, Scrum Master, etc.).</li>
+              <li>Envía la invitación.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 2.6 Historias de usuario -->
+        <div class="mb-4">
+          <h3>2.6 Historias de usuario</h3>
+          <p>Las historias de usuario describen funcionalidades desde la perspectiva del usuario final. Siguen el formato: <em>"Como [tipo de usuario], quiero [acción] para [beneficio]"</em>. Las historias de usuario son la base para el desarrollo ágil y ayudan a mantener el enfoque en las necesidades del usuario.</p>
+        </div>
+
+        <!-- 2.7 Historia de usuario de Jimmy -->
+        <div class="mb-4">
+          <h3>2.7 Historia de usuario de Jimmy</h3>
+          <p>Ejemplo de historia de usuario para LearnNow:</p>
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text"><em>"Como estudiante llamado Jimmy,
+                 quiero poder buscar cursos por categoría para encontrar 
+                 rápidamente los temas que me interesan."</em></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2.8 Crear un wireframe -->
+        <div class="mb-4">
+          <h3>2.8 Crear un wireframe</h3>
+          <p>Los wireframes son bocetos 
+            visuales de la interfaz de usuario que ayudan a planificar la estructura
+             y el diseño de las páginas antes de comenzar el desarrollo. 
+             Puedes usar herramientas como Figma, Balsamiq o simplemente papel y lápiz.</p>
+          
+          <!-- 2.8.1 Crear wireframes para su página de inicio -->
+          <div class="ms-4 mb-3">
+            <h4>2.8.1 Crear wireframes para su página de inicio</h4>
+            <p>Para la página de inicio de LearnNow, considera incluir:</p>
+            <ul>
+              <li>Barra de navegación con logo y menú</li>
+              <li>Banner principal con mensaje de bienvenida</li>
+              <li>Sección de cursos destacados</li>
+              <li>Botones de llamada a la acción (registrarse, explorar cursos)</li>
+              <li>Footer con información de contacto y enlaces</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2.9 Épicas -->
+        <div class="mb-4">
+          <h3>2.9 Épicas</h3>
+          <p>Las épicas son grandes cuerpos de trabajo que se pueden dividir en historias
+             de usuario más pequeñas. Por ejemplo, una épica para LearnNow podría ser
+              "Gestión de usuarios", que incluiría historias como "Registro de usuario", 
+              "Inicio de sesión" y "Recuperación de contraseña".
+            
+            La página de Planificación es donde organizarás tu trabajo y refinarás o planificarás historias para los próximos sprints. 
+            La página de planificación consta de cuatro secciones:
+
+            Sprint activo, que incluye las historias que se muestran en su tablero.
+            Próximo Sprint, que contiene historias refinadas y listas para ser elegidas para el próximo sprint.
+            Refinamiento, que debe contener las historias que se asignarán en una sesión de refinamiento.
+            Backlog, que contiene todas las historias de usuario que no encajan en ninguna de las otras
+            tres categorías. Puede que estén sin refinar, en espera de algo o simplemente no se hayan movido
+            a la categoría correcta.
+            
+            </p>
+        </div>
+
+        <!-- 2.10 Agregar historias de usuario -->
+        <div class="mb-4">
+          <h3>2.10 Agregar historias de usuario</h3>
+          
+          <!-- 2.10.1 Agregue su primera historia de usuario -->
+          <div class="ms-4 mb-3">
+            <h4>2.10.1 Agregue su primera historia de usuario</h4>
+            <p>Para agregar una historia de usuario en el Portal de Mendix:</p>
+            <ol>
+              <li>Ve a la sección "Stories".</li>
+              <li>Haz clic en "New Story".</li>
+              <li>Ingresa el título y la descripción de la historia.</li>
+              <li>Asigna puntos de historia y prioridad.</li>
+              <li>Guarda la historia.</li>
+            </ol>
+          </div>
+
+          <!-- 2.10.2 Importar historias de usuario -->
+          <div class="ms-4 mb-3">
+            <h4>2.10.2 Importar historias de usuario</h4>
+            <p>Puedes importar historias de usuario desde archivos Excel o CSV 
+              para agilizar la configuración inicial del proyecto.
+               Esta función es útil cuando tienes un backlog grande preparado previamente.</p>
+          </div>
+
+          <!-- 2.10.3 Crear epopeyas -->
+          <div class="ms-4 mb-3">
+            <h4>2.10.3 Crear épicas</h4>
+            <p>Para crear una épica:</p>
+            <ol>
+              <li>Ve a la sección "Epics".</li>
+              <li>Haz clic en "New Epic".</li>
+              <li>Asigna un nombre descriptivo (por ejemplo, "Módulo de Cursos").</li>
+              <li>Asocia historias de usuario a la épica.</li>
+            </ol>
+          </div>
+
+          <!-- 2.10.4 Iniciar un nuevo sprint -->
+          <div class="ms-4 mb-3">
+            <h4>2.10.4 Iniciar un nuevo sprint</h4>
+            <p>Para iniciar un sprint:</p>
+            <ol>
+              <li>Ve a la sección "Sprints".</li>
+              <li>Haz clic en "New Sprint".</li>
+              <li>Define la duración del sprint (generalmente 1-2 semanas).</li>
+              <li>Selecciona las historias de usuario para incluir en el sprint.</li>
+              <li>Inicia el sprint y comienza el desarrollo.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 2.11 Resumen -->
+        <div class="mb-4">
+          <h3>2.11 Resumen</h3>
+          <p>En este módulo has aprendido a gestionar el ciclo de vida de las aplicaciones, 
+            crear un proyecto, organizar tu equipo, trabajar con historias de usuario y épicas,
+             y planificar sprints. Estas habilidades son fundamentales para colaborar efectivamente 
+             en proyectos de Mendix.</p>
+        </div>
+
+        <!-- 2.12 Comprobación de conocimientos -->
+        <div class="mb-4">
+          <h3>2.12 Comprobación de conocimientos</h3>
+          
+          <!-- Pregunta 1 -->
+<div class="mb-4">
+  <h5>Pregunta 1: Puedes crear una nueva aplicación desde el Portal Mendix.</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion1" value="falso">
+    <label class="form-check-label" for="p1opcion1">
+      FALSO
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion2" value="verdadero">
+    <label class="form-check-label" for="p1opcion2">
+      Verdadero
+    </label>
+  </div>
+</div>
+
+<!-- Pregunta 2 -->
+<div class="mb-4">
+  <h5>Pregunta 2: Si un equipo Scrum se estanca debido a cuestiones que están fuera de su control, ¿quién es responsable de eliminar esos impedimentos?</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion1" value="gerente">
+    <label class="form-check-label" for="p2opcion1">
+      El gerente de proyecto
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion2" value="desarrollo">
+    <label class="form-check-label" for="p2opcion2">
+      El equipo de desarrollo
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion3" value="scrum-master">
+    <label class="form-check-label" for="p2opcion3">
+      El Scrum Master
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion4" value="producto">
+    <label class="form-check-label" for="p2opcion4">
+      El propietario del producto
+    </label>
+  </div>
+</div>
+ 
+
+<!-- Pregunta 3 -->
+<div class="mb-4">
+  <h5>Pregunta 3: Un factor crítico de éxito para las empresas que trabajan con Mendix es:</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion1" value="poo">
+    <label class="form-check-label" for="p3opcion1">
+      Conociendo la programación orientada a objetos
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion2" value="equipos">
+    <label class="form-check-label" for="p3opcion2">
+      Trabajar en pequeños equipos multifuncionales
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion3" value="individual">
+    <label class="form-check-label" for="p3opcion3">
+      Trabajar individualmente en proyectos dependiendo de la experiencia.
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion4" value="cascada">
+    <label class="form-check-label" for="p3opcion4">
+      Implementación del enfoque de gestión de proyectos en cascada
+    </label>
+  </div>
+</div>
+</div>
+</div>
+
+
+      <!-- MÓDULO 3 -->
+      <div id="modulo3" class="module-content">
+        <h1 class="text-center mb-4">Módulo 3: Comience a crear su aplicación</h1>
+        <p class="text-center mb-5">En este módulo comenzarás a construir tu aplicación utilizando Mendix Studio Pro</p>
+
+        <!-- Objetivos de aprendizaje -->
+        <div class="mb-4">
+          <h3>Objetivos de aprendizaje</h3>
+          <p>Al finalizar este módulo, serás capaz de:</p>
+          <ul>
+            <li>Reconocer los elementos de la interfaz de usuario de Mendix Studio Pro</li>
+            <li>Crear una página de inicio</li>
+            <li>Agregar columnas, filas y botones a una página</li>
+            <li>Crear páginas y vincularlas a botones</li>
+            <li>Analizar errores</li>
+            <li>Utilice Team Server para colaborar eficazmente con su equipo.</li>
+            <li>Confirme sus cambios en Team Server y comparta su trabajo con su equipo</li>
+          </ul>
+        </div>
+
+        <!-- 3.1 La siguiente fase: creación de su aplicación -->
+        <div class="mb-4">
+          <h3>3.1 La siguiente fase: creación de su aplicación</h3>
+          <p>Ahora que has planificado tu proyecto y organizado tu equipo, es momento de comenzar 
+            a construir la aplicación. En esta fase, utilizarás Mendix Studio Pro 
+            para crear las interfaces de usuario y la funcionalidad básica de tu aplicación LearnNow.</p>
+        </div>
+
+        <!-- 3.2 Explorar Mendix Studio Pro -->
+       <div class="mb-4">
+          <h3>3.2 Explorar Mendix Studio Pro</h3>
+          <p>Mendix Studio Pro es el entorno de desarrollo integrado (IDE) donde construirás tu aplicación. La interfaz incluye:</p>
+          <ul>
+            <li><strong>Project Explorer:</strong> Navegación por todos los documentos y recursos del proyecto.</li>
+            <li><strong>Toolbox:</strong> Widgets y componentes que puedes arrastrar a tus páginas.</li>
+            <li><strong>Properties Panel:</strong> Configuración de propiedades de elementos seleccionados.</li>
+            <li><strong>Canvas:</strong> Área de trabajo donde diseñas páginas visualmente.</li>
+            <li><strong>Error List:</strong> Lista de errores y advertencias del proyecto.</li>
+          </ul>
+
+          <!-- 3.2.1 Crea la página de inicio de tu aplicación -->
+          <div class="ms-4 mb-3">
+          <h4>3.2.1 Crea la página de inicio de tu aplicación</h4>
+            <p>Para crear la página de inicio:</p>
+            <ol>
+              <li>Abre tu proyecto en Mendix Studio Pro.</li>
+              <li>En el Project Explorer, busca la carpeta "Pages".</li>
+              <li>Haz clic derecho y selecciona "Add page".</li>
+              <li>Selecciona una plantilla o página en blanco.</li>
+              <li>Nombra la página "Home" y haz clic en "OK".</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- 3.3 Columnas y filas -->
+        <div class="mb-4">
+          <h3>3.3 Columnas y filas</h3>
+          <p>Las columnas y filas son contenedores estructurales que te permiten 
+            organizar el diseño de tus páginas. Puedes usar layouts con diferentes 
+            números de columnas (1, 2, 3, 4, etc.) para crear diseños responsivos y atractivos.</p>
+             </div>
+
+          <!-- 3.3.1 Agregar columnas a su aplicación -->
+        <div class="ms-4 mb-3">
+          <h4>3.3.1 Agregar columnas a su aplicación</h4>
+            <p>Ajusta la cuadrícula de diseño de los botones de la página de inicio. 
+              La página de inicio viene con uno preinstalado.
+               Haz clic derecho donde dice "columna" y añade tres columnas más.
+              
+               Ahora, ajustaremos la estructura de las columnas para tabletas. 
+               Actualmente, las columnas están en una fila horizontal, igual que
+              en el diseño de escritorio, pero queremos que estén en una cuadrícula, 
+                como en el wireframe.
+
+              Haga doble clic en una columna y se abrirá la ventana Editar columna 
+              de cuadrícula de diseño . Seleccione Manual para el ancho de la tableta y 
+              configure el tamaño de la tableta en 6. Mantenga los demás campos con sus 
+              valores predeterminados. Repita estos pasos en las demás columnas.
+
+
+              
+              </p>
+        </div>
+
+              <!-- 3.4 Botones -->
+      <div class="ms-4 mb-3">
+        <h3>3.4 Botones</h3>
+            <p>Tras configurar el diseño de la página de inicio, 
+              es hora de completarlo y hacerlo útil. Puedes hacerlo creando botones, 
+              ya que quieres poder navegar a otras páginas desde la página de inicio. 
+              No importa que estas páginas aún no estén disponibles; las añadiremos 
+              después de crear los botones.</p>
+       </div>
+
+          <!-- 3.4.1 Agregar botones a su página de inico -->
+          <div class="ms-4 mb-3">
+             <h4>3.4.1 Agregar botones a su página de inicio</h4>
+            <p>
+              Arrastra los botones desde la Caja de herramientas a tu página.
+
+              Configura cada botón:
+
+              Cambia el título (ej. “Cursos”).
+
+              Selecciona un ícono adecuado (ej. libro cerrado, map-location-pin, user, graduation-hat).
+
+              Aplica estilos desde la pestaña Apariencia:
+
+              Tamaño: Grande
+
+              Ancho completo: Sí
+
+              Repite con los demás botones (Ubicaciones, Profesores, Aprendices).
+
+              Ajusta el diseño para tabletas y dispositivos móviles.
+
+              Guarda tu trabajo frecuentemente: Archivo > Guardar todo o Ctrl + S. Studio Pro guarda
+            </p>
+
+      </div>
+
+
+        <!-- 3.5 Crear páginas -->
+          <div class="ms-4 mb-3">
+            <h3>3.5 Crear páginas</h3>
+            <p>
+              Se crean nuevas páginas en Mendix a partir del módulo MyFirstModule.
+
+            Se agrega una página llamada Course_Overview, con diseño Atlas_Default y plantilla Lista.
+
+            Se repiten los mismos pasos para crear tres páginas más: Descripción general de la ubicación, Resumen del profesor y Resumen del aprendiz, todas con el mismo diseño y plantilla.
+
+            Aparecen cuatro errores, pero se resolverán al configurar las páginas.
+
+            Luego, se personalizan los títulos de cada página en el encabezado: Resumen del curso, Resumen de la ubicación, Resumen del profesor y Resumen del alumno.
+            </p>
+
+            <p>
+              Vincular páginas a los botones:
+
+             En la página de inicio, selecciona un botón.
+
+             En Propiedades, cambia el evento “Al hacer clic” a “Mostrar una página”.
+
+            Elige la página correspondiente y selecciona Aceptar.
+
+            Repite el proceso con los demás botones (Cursos, Ubicaciones, Profesores, Aprendices).
+
+           👉 Consejo: También puedes crear páginas nuevas directamente desde las propiedades de un botón.
+            </p>
+             </div>
+
+
+             <!-- 3.6 Errores -->
+          <div class="ms-4 mb-3">
+            <h3>3.6 Errores</h3>
+            <p>
+              En Mendix, los errores aparecen con puntos rojos y mensajes en el panel
+               de errores. Estos indican configuraciones incorrectas o pendientes y deben 
+               resolverse para poder ejecutar la aplicación. 
+               Al hacer doble clic en un mensaje se abre el elemento con el problema. 
+               En este caso, los cuatro errores se deben a que las vistas de lista no 
+               tienen una entidad configurada como fuente de datos. Más adelante se a
+               prenderá a solucionarlo. Además, se explica la importancia de guardar el 
+               trabajo de forma permanente.
+            </p>
+        </div>
+
+             <!-- 3.7 Servidor de equipo-->
+          <div class="ms-4 mb-3">
+            <h3>3.7 Servidor de equipo</h3>
+            <p>
+              Team Server: repositorio en la nube de Mendix para colaboración y control de versiones.
+
+              Acceso: ser miembro del proyecto y tener permisos de edición.
+
+              Copia de trabajo: versión local donde haces cambios antes de subirlos.
+
+              Cambios: se muestran en el Explorador y el panel de Cambios.
+
+              Commit: envía cambios al repositorio; deben ser pequeños, claros y sin errores.
+
+              Actualizar: trae a tu copia los cambios de tus compañeros.
+
+             👉 Permite trabajar en equipo de forma ordenada y segura.
+            </p>
+
+            <p>
+              Confirmar cambios
+              Comparta todo lo que has hecho con el Team Server para que sea imposible 
+              perder tu trabajo y puedas compartirlo con otros.
+
+               Vaya a Control de versiones y haga clic en Confirmar.
+               Mendix te avisará de que hay errores en tu proyecto. Responde "Sí" , 
+               pero aún así quieres confirmar. Tu aplicación nunca se ha ejecutado, 
+               así que confirmar errores no tiene ningún efecto.
+
+               Escriba un mensaje de confirmación descriptivo y seleccione a qué historia 
+               de usuario está vinculada esta confirmación.
+
+               Haga clic en Aceptar.
+            </p>
+
+             </div>
+
+             <!-- 3.8 Revisa tu trabajo -->
+          <div class="ms-4 mb-3">
+            <h3>3.8 Revisa tu trabajo</h3>
+            <p>
+              Se pueden usar Paquetes de Aplicaciones (.mpk) para cargar versiones idénticas de una app en Studio Pro.
+
+              Pasos: descargar el archivo .mpk → abrir Studio Pro → Archivo > Importar paquete de aplicación… → seleccionar el archivo → aceptar.
+
+              Opcional: crear la app solo localmente y habilitar Team Server más 
+              tarde si se desea.
+            </p>
+
+             </div>
+
+
+             <!-- 3.9 Resumen -->
+          <div class="ms-4 mb-3">
+            <h3>3.9 Resumen</h3>
+            <p>
+              En este módulo, pasó de capturar los requisitos a crear su aplicación y utilizó
+               Studio Pro para crear las primeras páginas de su aplicación desde cero.
+
+             ¡Felicitaciones! ¡Ya tienes páginas atractivas e intuitivas! 
+             Continúa con el siguiente módulo para aprender a mostrar datos dinámicos 
+             en las páginas que acabas de crear.
+
+
+            </p>
+
+           </div>
+
+             <!-- 3.10 Comprobación de conocimientos -->
+          <div class="ms-4 mb-3">
+            <h3>Comprobación de conocimientos </h3>
+            <!-- Pregunta 1 -->
+<div class="mb-4">
+  <h5>Pregunta 1: Una página es responsiva cuando:</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion1" value="gira">
+    <label class="form-check-label" for="p1opcion1">
+      Gira a medida que giras tu móvil.
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion2" value="funciona">
+    <label class="form-check-label" for="p1opcion2">
+      Funciona y se ve bien en todos los dispositivos.
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion3" value="datos">
+    <label class="form-check-label" for="p1opcion3">
+      Permite visualizar datos dinámicos
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta1" id="p1opcion4" value="interaccion">
+    <label class="form-check-label" for="p1opcion4">
+      Incluye la interacción del usuario.
+    </label>
+  </div>
+</div>
+
+<!-- Pregunta 2 -->
+<div class="mb-4">
+  <h5>Pregunta 2: ¿Cuántas filas puede tener una página?</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion1" value="12">
+    <label class="form-check-label" for="p2opcion1">
+      12
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion2" value="4">
+    <label class="form-check-label" for="p2opcion2">
+      4
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion3" value="1">
+    <label class="form-check-label" for="p2opcion3">
+      1
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta2" id="p2opcion4" value="tantos">
+    <label class="form-check-label" for="p2opcion4">
+      Tantos como necesites
+    </label>
+  </div>
+</div>
+
+<!-- Pregunta 3 -->
+<div class="mb-4">
+  <h5>Pregunta 3: Es posible colocar varios widgets en un contenedor.</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion1" value="verdadero">
+    <label class="form-check-label" for="p3opcion1">
+      Verdadero
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta3" id="p3opcion2" value="falso">
+    <label class="form-check-label" for="p3opcion2">
+      FALSO
+    </label>
+  </div>
+</div>
+
+<!-- Pregunta 4 -->
+<div class="mb-4">
+  <h5>Pregunta 4: Descargaste la última versión del proyecto desde Team Server e hiciste algunos cambios en la aplicación. ¿Qué debes hacer para que los miembros de tu equipo puedan ver los cambios?</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta4" id="p4opcion1" value="historia">
+    <label class="form-check-label" for="p4opcion1">
+      Actualizar la historia del usuario de En ejecución a Listo
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta4" id="p4opcion2" value="nube">
+    <label class="form-check-label" for="p4opcion2">
+      Publica tu aplicación en la nube
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta4" id="p4opcion3" value="sincronizar">
+    <label class="form-check-label" for="p4opcion3">
+      Sincronizar con el Team Server
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="pregunta4" id="p4opcion4" value="confirmar">
+    <label class="form-check-label" for="p4opcion4">
+      Confirme su aplicación en Team Server
+    </label>
+  </div>
+</div>
+
+
+           </div>
+
+
+
+
+            
+
+
+            
+
+
+
+
+
+
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function showModule(id) {
+        // Oculta todos los módulos
+        document.querySelectorAll('.module-content').forEach(function (el) {
+          el.classList.remove('active');
+        });
+
+        // Muestra el módulo seleccionado
+        document.getElementById(id).classList.add('active');
+      }
+    </script>
+  </body>
+</html>
+
+
+              
